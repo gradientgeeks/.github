@@ -81,6 +81,22 @@ Measured with the Linux Foundation **OpenMessaging Benchmark (OMB)** framework o
 
 ---
 
+## 🛡️ Quantum-Safe Identity: DilithiAuth
+
+[**DilithiAuth**](https://github.com/gradientgeeks/dilithiauth) is a research-grade, post-quantum Identity Provider (IdP) and OAuth 2.0 Authorization Server designed to neutralize **"Harvest Now, Forge Later" (HNFL)** attacks.
+
+[![Repository](https://img.shields.io/badge/Repo-gradientgeeks%2Fdilithiauth-blue?logo=github)](https://github.com/gradientgeeks/dilithiauth)
+[![PQC](https://img.shields.io/badge/PQC-NIST_FIPS_204_ML--DSA--44-blueviolet)](https://github.com/gradientgeeks/dilithiauth)
+[![Classical](https://img.shields.io/badge/Classical-Ed25519_Hybrid-black)](https://github.com/gradientgeeks/dilithiauth)
+[![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?logo=go&logoColor=white)](https://github.com/gradientgeeks/dilithiauth)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](https://github.com/gradientgeeks/dilithiauth/blob/main/LICENSE)
+
+* **Hybrid Cryptographic Signatures**: Seamlessly merges classical **Ed25519** with post-quantum **ML-DSA-44** (NIST FIPS 204 Module-Lattice Digital Signature Algorithm).
+* **Solves Token Bloat**: Post-quantum signatures are ~2.4 KB (vs. 64 B Ed25519). DilithiAuth solves reverse proxy header drops via the **Edge Proxy Offloading Gateway**, **Thin JWTs** with out-of-band `SigStore` verification, and compact **CBOR Web Tokens (CWT)**.
+* **Full OAuth 2.0 & OIDC Engine**: PKCE authorization code grant, distributed key rotation (`KeyStore`), authorization code deduplication (`AuthzStore`), and modern Developer Portal.
+
+---
+
 ## 🛠 Other Open-Source Initiatives
 
 * [**Aegis**](https://github.com/gradientgeeks/aegis): Cloud security posture management and runtime policy enforcement engine.
